@@ -1,0 +1,19 @@
+<%- include("includes/head.ejs"); %>
+<body>
+    <h1>Create New Post</h1>
+
+    <form method="post" action="/ig/new">
+        <label for="">Username :</label>
+        <input type="text" name="username"  placeholder="username..">
+        
+<br><br>
+        <label for="">post :</label>
+        <input type="text" name="post" placeholder="post link..">
+        <br><br>
+
+        <label for="">Caption :</label>
+        <input type="text" name="caption" placeholder="caption..">
+        <br><br>
+        <button type="submit">Post</button>
+    </form>
+</body>

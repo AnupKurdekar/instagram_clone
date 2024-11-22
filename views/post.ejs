@@ -1,0 +1,13 @@
+<%- include("includes/head.ejs"); %>
+<body>
+    <h1>View Post</h1>
+
+    <h3>Username : @<%= post.username %></h3>
+    <h3>ID : @<%= post.id %></h3>
+    <img src=" <%= post.post %>" alt="" style="height: 500px; width: 500px;">
+    <p>Caption : <%=post.caption %></p>
+    <br>
+   
+    <a href="/ig/delete/<%= post.id %>">Delete Post</a>
+
+</body>

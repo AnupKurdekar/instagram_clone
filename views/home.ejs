@@ -1,0 +1,24 @@
+ <%- include("includes/head.ejs"); %>
+<body>
+    <h1>Instagram Home</h1>
+
+    <a class="create" href="http://localhost:9090/ig/new">Create Post</a>
+
+    <div class="post-main">
+        <% data.forEach(function(data,index){ %>
+           <ol> 
+       <li> <div class="box1">
+        
+            <div class="name">@<%= data.username %></div> 
+            <div class="img"><img src="<%- data.post %>" alt="">  </div>
+            <div class="content"><%= data.caption %></div>
+            <a  href="/ig/post/<%= data.id %>">View</a>
+        </div>
+        </li>
+
+    </ol>
+    <% }); %>
+    </div>
+
+
+</body>
